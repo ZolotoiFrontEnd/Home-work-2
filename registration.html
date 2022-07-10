@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>РЕГИСТРАЦИЯ</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href="../index.html">Главная</a>
+			<a href="articles.html">Статьи</a>
+			<a href="catalog.html">Каталог</a>
+			<a href="contacts.html">Контакты</a>
+			<a href="gallery.html">Галерея</a>
+			<a href="page-nav.html">Навигация</a>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Регистрация</h1>
+		<!-- Поля ввода -->
+		<form action="https://tests.fomenko.top/echo/index.php" method="get">
+			<fieldset>
+				<legend>Поля ввода</legend>
+				<div>
+					<input type="text" name="surname" placeholder="Иванов">
+					<label>Фамилия</label>
+				</div>
+				<div>
+					<input type="text" name="name" placeholder="Иван">
+					<label>Имя</label>
+				</div>
+				<div>
+					<input type="text" name="last-name" placeholder="Иванович">
+					<label>Отчество</label>
+				</div>
+				<div>
+					<input type="password" name="password" placeholder="Введите ваш пароль">
+					<label>Пароль</label>
+				</div>
+				<div>
+					<input type="email" name="mail" placeholder="example@gmail.com">
+					<label>Адрес электронной почты</label>
+				</div>
+				<div>
+					<input type="url" name="site" placeholder="https://mysite.name/">
+					<label>Адрес сайта</label>
+				</div>
+				<div>
+					<input type="search" name="search" id="search" placeholder="Введите ваш запрос">
+					<label for="search">Поиск</label>
+				</div>
+			</fieldset>
+
+			<!-- Поле загрузки файла -->
+			<fieldset>
+				<legend>Загрузка файла</legend>
+				<div>
+					<label>Ваше фото</label>
+					<input type="file" name="foto">
+				</div>
+			</fieldset>
+
+			<!-- Поле выбора даты -->
+			<fieldset>
+				<legend>Выбор даты рождения</legend>
+				<div>
+					<input type="date" name="birthday">
+					<label>Выберите Вашу дату рождения</label>
+				</div>
+			</fieldset>
+
+			<!-- Поле одиночного выбора -->
+			<fieldset>
+				<legend>Выберите Ваш пол</legend>
+				<div>
+					<input type="radio" name="gender" id="male" value="male">
+					<label for="male">Мужской</label>
+				</div>
+				<div>
+					<input type="radio" name="gender" id="female" value="female">
+					<label for="female">Женский</label>
+				</div>
+			</fieldset>
+
+			<!-- Поле множественного выбора -->
+			<fieldset>
+				<legend>Предпочитаемая кухня</legend>
+				<div>
+					<input type="checkbox" name="kitchen" id="kitchen-UA" value="UA">
+					<label for="kitchen-UA">Украинская</label>
+				</div>
+				<div>
+					<input type="checkbox" name="kitchen" id="kitchen-IT" value="IT">
+					<label for="kitchen-IT">Иатльянская</label>
+				</div>
+				<div>
+					<input type="checkbox" name="kitchen" id="kitchen-FR" value="FR">
+					<label for="kitchen-FR">Французская</label>
+				</div>
+				<div>
+					<input type="checkbox" name="kitchen" id="kitchen-JP" value="JP">
+					<label for="kitchen-JP">Японская</label>
+				</div>
+				<div>
+					<input type="checkbox" name="kitchen" id="kitchen-Georgia" value="Georgia">
+					<label for="kitchen-Georgia">Грузинская</label>
+				</div>
+			</fieldset>
+
+			<!-- Поле выпадающего списка-->
+			<fieldset>
+				<legend>Выпадающий список</legend>
+				<label for="your-car">Какой у вас автомобиль</label>
+				<select name="your-car" id="your-car">
+					<option selected disabled>Сделайте свой выбор</option>
+					<option value="Mercedes">Mercedes</option>
+					<option value="BMW">BMW</option>
+					<option value="Volvo">Volvo</option>
+					<option value="Honda">Honda</option>
+					<option value="Hundai">Hundai</option>
+					<option value="Mazda">Mazda</option>
+					<option value="Nissan">Nissan</option>
+					<option value="Opel">Opel</option>
+					<option value="Pegeout">Pegeout</option>
+					<option value="Jeep">Jeep</option>
+					<option value="Daewoo">Daewoo</option>
+				</select>
+			</fieldset>
+
+			<!-- Поле комментария -->
+			<fieldset>
+				<legend>Многострочный текст</legend>
+				<label for="about_user">О себе</label>
+				<textarea name="about_user" id="about_user" cols="30" rows="10"
+					placeholder="Пару слов в произвольной форме"></textarea>
+			</fieldset>
+
+
+			<!-- Кнопки -->
+			<div>
+				<input type="submit" value="Отправить форму">
+				<input type="reset" value="Сбросить форму">
+			</div>
+		</form>
+	</main>
+
+	<footer>
+		<div> &copy; Dmitriy Prykhodko </div>
+	</footer>
+
+</body>
+
+</html>
